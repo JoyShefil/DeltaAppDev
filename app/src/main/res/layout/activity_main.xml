@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#03DAC5"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170dp"
+            android:text="My Quiz App"
+            android:textColor="@android:color/white"
+            android:textSize="42dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="A Place Where You Can Learn"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/startBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/rounded_corners"
+        android:shadowColor="#018786"
+        android:text="NEXT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:visibility="gone"
+        app:backgroundTint="#5AEDBE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_cor_text"
+        android:paddingLeft="32dp"
+        android:paddingTop="16dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="16dp"
+        android:shadowColor="#018786"
+        android:text="ENTER YOUR NAME:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF000000"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name "
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:shadowColor="#FF000000"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FF000000"
+        android:textColorHint="#8B0C0101"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
